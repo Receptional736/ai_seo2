@@ -1,0 +1,8 @@
+# core libraries
+openai
+anthropic
+openai-agents[litellm]
+langchain
+pinecone
+gradio
+python-dotenv
