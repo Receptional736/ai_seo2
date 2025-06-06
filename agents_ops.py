@@ -68,7 +68,7 @@ def claud_web_search(query:str):
     
     response = client_cld.messages.create(
         model="claude-3-7-sonnet-latest",
-        max_tokens=1024,
+        max_tokens=800,
         messages=[
             {"role": "user", "content": f"{query}"}
         ],
@@ -76,7 +76,7 @@ def claud_web_search(query:str):
             {
                 "type": "web_search_20250305",
                 "name": "web_search",
-                "max_uses": 1
+                "max_uses": 2
             }
         ]
     )
