@@ -67,7 +67,7 @@ def claud_web_search(query:str):
     client_cld = anthropic.Anthropic(api_key=antro)
     
     response = client_cld.messages.create(
-        model="claude-sonnet-4-20250514",
+        model="claude-3-7-sonnet-latest",
         max_tokens=1024,
         messages=[
             {"role": "user", "content": f"{query}"}

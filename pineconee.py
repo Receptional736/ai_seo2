@@ -1,12 +1,8 @@
 from dotenv import load_dotenv
-
-
 from typing import Dict,Literal
 import os
 import asyncio
 from openai import OpenAI
-
-
 import asyncio
 from typing import List
 from datetime import datetime
